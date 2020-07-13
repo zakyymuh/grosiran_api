@@ -4,11 +4,10 @@ Grosir API adalah sebuah API untuk proses binis peminjaman modal online barang g
 
 ## FEATURES
 
-###Grosir
+Grosir<br>
+`GET` `POST` `DELETE` `PUT`
 
 ```
-http://hallosemuanya.xyz/grosiran_api/grosir(GET)
-http://hallosemuanya.xyz/grosiran_api/grosir(POST)
-http://hallosemuanya.xyz/grosiran_api/grosir(DELETE)
-http://hallosemuanya.xyz/grosiran_api/grosir(PUT)
+http://hallosemuanya.xyz/grosiran_api/grosir
 ```
+
