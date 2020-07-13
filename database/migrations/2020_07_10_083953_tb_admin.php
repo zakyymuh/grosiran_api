@@ -23,6 +23,7 @@ class TbAdmin extends Migration
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('last_login')->nullable();
+            $table->string('token')->nullable();
         });
     }
 

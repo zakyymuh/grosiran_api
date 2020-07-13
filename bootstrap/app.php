@@ -76,9 +76,10 @@ $app->configure('app');
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+ $app->routeMiddleware([
+     'authAdmin' => App\Http\Middleware\Authenticate::class,
+     'authPembeli' => App\Http\Middleware\PembeliMiddleware::class,
+ ]);
 
 /*
 |--------------------------------------------------------------------------
