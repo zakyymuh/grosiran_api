@@ -19,10 +19,17 @@ class Barang extends Model implements AuthenticatableContract, AuthorizableContr
      */
 
     protected $table = 'tb_barang';
+    public $timestamps = false;
     protected $primaryKey = 'barang_id';
     protected $fillable = [
         'barang_id',
         'barang_name',
+        'barang_price',
+        'barang_total',
+        'barang_unit',
+        'grosir_id',
+        'updated_at',
+        'created_at',
     ];
 
     /**

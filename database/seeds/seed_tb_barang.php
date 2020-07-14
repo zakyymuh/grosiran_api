@@ -15,7 +15,7 @@ class seed_tb_barang extends Seeder
             [
                 'barang_id' => 1,
                 'grosir_id' => 1,
-                'barang_nama' => 'Royco Cap Badak',
+                'barang_name' => 'Royco Cap Badak',
                 'barang_total' => 50,
                 'barang_unit' => 'Sachet',
                 'barang_price' => 20000,
@@ -24,7 +24,7 @@ class seed_tb_barang extends Seeder
             ], [
                 'barang_id' => 2,
                 'grosir_id' => 1,
-                'barang_nama' => 'Rinso Cap Bala-bala',
+                'barang_name' => 'Rinso Cap Bala-bala',
                 'barang_total' => 1000,
                 'barang_unit' => 'Pack',
                 'barang_price' => 30000,

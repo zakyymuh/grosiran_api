@@ -16,7 +16,7 @@ class TbBarang extends Migration
         Schema::create('tb_barang', function (Blueprint $table) {
             $table->string('barang_id',20)->primary();
             $table->string('grosir_id',20);
-            $table->string('barang_nama',200)->nullable();
+            $table->string('barang_name',200)->nullable();
             $table->integer('barang_total')->nullable();
             $table->string('barang_unit',50)->nullable();
             $table->double('barang_price',10)->nullable();

@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 use App\Pembeli;
+use App\Grosir;
 
 
 class RegisterController
@@ -37,4 +38,28 @@ class RegisterController
         }
         return $data;
     }
+    public function grosir(Request $request)
+    {
+        $password = $request->input('grosir_password');
+        $result = Grosir::create([
+
+            'grosir_id' => $request->input('grosir_id'),
+            'grosir_name' => $request->input('grosir_name'),
+            'grosir_username' => $request->input('grosir_username'),
+            'grosir_password' => Hash::make($password),
+        ]);
+        if ($result){
+            $data = [
+                'status' => "00",
+                'msg' => "success",
+            ];
+        } else {
+            $data = [
+                'status' => "01",
+                'msg' => "failed",
+            ];
+        }
+        return $data;
+    }
+
 }

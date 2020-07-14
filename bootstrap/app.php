@@ -79,6 +79,7 @@ $app->configure('app');
  $app->routeMiddleware([
      'authAdmin' => App\Http\Middleware\Authenticate::class,
      'authPembeli' => App\Http\Middleware\PembeliMiddleware::class,
+     'authGrosir' => App\Http\Middleware\GrosirMiddleware2::class,
  ]);
 
 /*
@@ -93,7 +94,7 @@ $app->configure('app');
 */
 
  $app->register(App\Providers\AppServiceProvider::class);
- $app->register(App\Providers\AuthServiceProvider::class);
+$app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
 /*

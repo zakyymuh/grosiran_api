@@ -23,6 +23,11 @@ class Grosir extends Model implements AuthenticatableContract, AuthorizableContr
     protected $fillable = [
         'grosir_id',
         'grosir_name',
+        'grosir_username',
+        'grosir_password',
+        'token',
+        'last_login',
+        'created_at',
     ];
 
     /**

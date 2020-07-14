@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Grosir;
 use Illuminate\Http\Request;
 use App\Pembeli;
 use App\Barang;
@@ -23,8 +24,11 @@ class PembeliController extends Controller
         $result = Pembeli::where('token',$token)->get()->first();
         return $result;
     }
-    public function showAllBarang(){
-        return Barang::all();
+    public function showAllBarang(Request $request){
+        return Barang::where("grosir_id",$request->grosir_id)->get();
+    }
+    public function showAllGrosir(){
+        return Grosir::select("grosir_id","grosir_name","grosir_address")->get();
     }
     public function showAll(){
         return Pembeli::all();
